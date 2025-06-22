@@ -13,9 +13,9 @@ serviceAccount:
   name: ""
 service:
   type: NodePort
-  port: 3000
+  port: 8080
   nodePort: 31001
-  targetPort: 3000
+  targetPort: 8080
 
 livenessProbe:
   httpGet:
