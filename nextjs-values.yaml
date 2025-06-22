@@ -25,3 +25,6 @@ readinessProbe:
   initialDelaySeconds: 60
   periodSeconds: 10
   timeoutSeconds: 5
+env:
+  - name: NEXT_PUBLIC_API_URL
+    value: "http://web-app-spring-boot-app.default.svc.cluster.local:8080/api/todos"
