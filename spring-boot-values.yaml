@@ -13,14 +13,14 @@ serviceAccount:
   name: ""
 livenessProbe:
   httpGet:
-    path: /  # Hoặc endpoint khác như /api/health nếu ứng dụng có
+    path: /actuator/health
     port: 8080
   initialDelaySeconds: 60  # Tăng để chờ ứng dụng khởi động
   periodSeconds: 10
   timeoutSeconds: 5
 readinessProbe:
   httpGet:
-    path: /  # Hoặc endpoint khác như /api/health
+    path: /actuator/health
     port: 8080
   initialDelaySeconds: 60
   periodSeconds: 10
