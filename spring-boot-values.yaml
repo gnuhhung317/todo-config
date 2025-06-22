@@ -11,3 +11,17 @@ serviceAccount:
   # The name of the service account to use.
   # If not set and create is true, a name is generated using the fullname template
   name: ""
+livenessProbe:
+  httpGet:
+    path: /  # Hoặc endpoint khác như /api/health nếu ứng dụng có
+    port: 8080
+  initialDelaySeconds: 60  # Tăng để chờ ứng dụng khởi động
+  periodSeconds: 10
+  timeoutSeconds: 5
+readinessProbe:
+  httpGet:
+    path: /  # Hoặc endpoint khác như /api/health
+    port: 8080
+  initialDelaySeconds: 60
+  periodSeconds: 10
+  timeoutSeconds: 5
