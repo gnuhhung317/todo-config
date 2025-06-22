@@ -1,0 +1,3 @@
+# config-repo/spring-boot-values.yaml
+image:
+  tag: "1.0.0"  
