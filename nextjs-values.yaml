@@ -1,6 +1,6 @@
 # config-repo/nextjs-values.yaml
 image:
-  tag: "7c3d225"
+  tag: "2bf05d1"
 replicas: 1
 serviceAccount:
   # Specifies whether a service account should be created
