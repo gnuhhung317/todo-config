@@ -1,6 +1,6 @@
 # config-repo/spring-boot-values.yaml
 image:
-  tag: "f9cbf3b"  
+  tag: "ee47e4c"  
 replicas: 1
 serviceAccount:
   # Specifies whether a service account should be created
